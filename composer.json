@@ -1,0 +1,26 @@
+{
+    "name": "php-tool-bucket/bcmath-tools",
+    "homepage": "https://github.com/PHPToolBucket/BCMathTools",
+    "license": "MIT",
+    "authors": [{
+        "name": "Wes",
+        "role": "Smith",
+        "homepage": "https://github.com/Netmosfera"
+    }],
+    "require": {
+        "php": ">=7.2 <8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=7 <8"
+    },
+    "autoload": {
+        "files": [
+            "src/bcround.inc.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPToolBucket\\BCMathToolsTests\\": "tests/"
+        }
+    }
+}
