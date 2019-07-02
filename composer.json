@@ -16,7 +16,8 @@
     },
     "autoload": {
         "files": [
-            "src/bcround.inc.php"
+            "src/bcround.inc.php",
+            "src/bcceil.inc.php"
         ]
     },
     "autoload-dev": {
