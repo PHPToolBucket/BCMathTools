@@ -7,7 +7,7 @@ use function PHPToolBucket\BCMathTools\bcceil;
 
 class bcceilTest extends TestCase
 {
-    public function datax(){
+    public function data_test_non_ceiled(){
         $data[] = ["0", "1"];
         $data[] = ["-0", "0"];
 
@@ -28,7 +28,7 @@ class bcceilTest extends TestCase
         }
     }
 
-    /** @dataProvider datax */
+    /** @dataProvider data_test_non_ceiled */
     public function test_non_ceiled(String $number, String $nextWhole){
         $ceiled = bcceil($number);
         self::assertSame($nextWhole, $ceiled);

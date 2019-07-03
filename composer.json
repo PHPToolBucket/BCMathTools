@@ -17,6 +17,7 @@
     "autoload": {
         "files": [
             "src/bcround.inc.php",
+            "src/bciswhole.inc.php",
             "src/bcceil.inc.php"
         ]
     },

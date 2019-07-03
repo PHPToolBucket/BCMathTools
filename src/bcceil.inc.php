@@ -3,11 +3,7 @@
 namespace PHPToolBucket\BCMathTools;
 
 function bcceil(String $number): String{
-    if(strpos($number, ".") === FALSE){
-        return $number;
-    }
-
-    if(preg_match("/\.0*$/", $number) === 1){
+    if(bciswhole($number, 100)){ // @TODO scale param
         return bcround($number, 0);
     }
 
